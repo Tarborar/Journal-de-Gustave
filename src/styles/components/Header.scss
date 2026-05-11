@@ -1,0 +1,26 @@
+@import '../utils/variables.scss';
+
+.header__navigation{
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.header__button{
+    position: relative;
+
+    &:hover{
+        .header__buttonText{
+            color: $main-color;
+        }
+    }
+}
+
+.header__buttonText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Cinzel;
+    font-size: 24px;
+    color: white;
+}
