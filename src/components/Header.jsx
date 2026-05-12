@@ -10,41 +10,41 @@ function Header(){
             <ul className="horizontal header__navigation">
                 <li>
                     <NavLink to="pictos">
-                        <div className='header__button'>
+                        <div className='header__button relative'>
                             <img src={navButton} alt="" />
-                            <span className="header__buttonText">Pictos</span>
+                            <span className="header__buttonText absolute">Pictos</span>
                         </div>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="armes">
-                        <div className="header__button">
+                        <div className="header__button relative">
                             <img src={navButton} alt="" />
-                            <span className="header__buttonText">Armes</span>
+                            <span className="header__buttonText absolute">Armes</span>
                         </div>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="journaux">
-                        <div className="header__button">
+                        <div className="header__button relative">
                             <img src={navButton} alt="" />
-                            <span className="header__buttonText">Journaux</span>
+                            <span className="header__buttonText absolute">Journaux</span>
                         </div>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="gestrals">
-                        <div className="header__button">
+                        <div className="header__button relative">
                             <img src={navButton} alt="" />
-                            <span className="header__buttonText">Gestrals</span>
+                            <span className="header__buttonText absolute">Gestrals</span>
                         </div>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="disques">
-                        <div className="header__button">
+                        <div className="header__button relative">
                             <img src={navButton} alt="" />
-                            <span className="header__buttonText">Disques</span>
+                            <span className="header__buttonText absolute">Disques</span>
                         </div>
                     </NavLink>
                 </li>

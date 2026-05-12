@@ -5,21 +5,19 @@
     margin-bottom: 100px;
 }
 
-.header__button{
-    position: relative;
+.header__button:hover{
+    .header__buttonText{
+        color: $main-color;
+    } 
+}
 
-    &:hover{
-        .header__buttonText{
+nav a.active{
+    .header__buttonText{
             color: $main-color;
         }
-    }
 }
 
 .header__buttonText{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: Cinzel;
     font-size: 24px;
     color: white;

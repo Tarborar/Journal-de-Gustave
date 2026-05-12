@@ -1,0 +1,78 @@
+@import '../utils/variables.scss';
+
+.pictos{
+    justify-content: space-between;
+    height: 75vh;
+}
+
+.pictos__select{
+    height: 100%;
+    gap: 16px;
+}
+
+.pictos__search{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+
+.pictos__searchIcon{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    width: 3.5%;
+}
+
+.pictos__paragraph{
+    text-align: center;
+    font-family: "IM Fell English";
+    font-style: italic;
+    font-size: 36px;
+    opacity: 0.66;
+}
+
+.pictos__list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 8px;
+    column-gap: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+    padding: 12px;
+}
+
+.pictos__buttonText{
+    width: 100%;
+    align-items: center;
+}
+
+.pictos__buttonTextInfo{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pictos__buttonTextNom{
+    font-family: 'IM Fell English';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.pictos__buttonTextPoint{
+    font-family: 'BebasNeue-Regular';
+    font-size: 28px;
+    color: $blue-color;
+    transform: translateX(-30px);
+}
+
+.pictos__buttonSquare{
+    transform: translateX(-12px);
+}
+
+.pictos__icon{
+    transform: translate(-23px, -13px);
+    width: 50%;
+}

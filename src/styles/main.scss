@@ -37,13 +37,24 @@ body::before{
     color: white;
 }
 
+//Alignement
 .horizontal{
     display: flex;
 }
-
 .vertical{
     display: flex;
     flex-direction: column;
+}
+
+//Centrer image-élement
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .gap{
