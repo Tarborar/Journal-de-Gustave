@@ -1,0 +1,24 @@
+.search{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: 'IM Fell English';
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 12%;
+    padding-right: 4%;
+}
+
+.search__icon{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    width: 3.5%;
+}
+
+input:focus{
+    outline: none;
+}

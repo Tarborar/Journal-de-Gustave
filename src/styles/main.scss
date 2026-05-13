@@ -10,6 +10,7 @@ ul, p{
 
 html{
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 body{
@@ -37,7 +38,7 @@ body::before{
     color: white;
 }
 
-//Alignement
+//Position
 .horizontal{
     display: flex;
 }
@@ -45,8 +46,6 @@ body::before{
     display: flex;
     flex-direction: column;
 }
-
-//Centrer image-élement
 .relative{
     position: relative;
 }
@@ -56,7 +55,33 @@ body::before{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 8px;
+    column-gap: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+    padding-left: 12px;
+}
 
 .gap{
     gap: $gap;
+}
+
+//Typographie
+.cinzel{
+    font-family: Cinzel;
+    font-size: 24px;
+}
+.mainColor{
+    color: #ECCFA3;
+}
+.imEnglish{
+    font-family: "IM Fell English";
+}
+.imEnglishItalic{
+    font-family: "IM Fell English";
+    font-style: italic;
 }

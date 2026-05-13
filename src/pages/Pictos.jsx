@@ -1,43 +1,47 @@
+//Hook
+import { useState } from 'react';
+
+//Scss
 import '../styles/pages/Pictos.scss';
+
+//Data
 import { pictosList } from '../datas/pictosList';
+
+//Image
 import pictoButton from '../assets/pictoButton.png';
 import pictoIconButton from '../assets/pictoIconButton.png';
-import searchInput from '../assets/searchInput.svg';
-import searchIcon from '../assets/searchIcon.svg';
+import backgroundData from '../assets/backgroundData.png';
+
+//Component
+import Search from '../components/Search';
+import PictosListe from '../components/PictosListe';
+import PictosDatas from '../components/PictosDatas';
 
 function Pictos(){
+    const [pictoSelected, setPictoSelected] = useState(null);
+
+    function selectPicto(picto){
+        setPictoSelected(picto);
+        console.log(picto);
+    }
+
     return(
         <div className="pictos horizontal">
             <div className="pictos__select vertical">
-                <div className='relative'>
-                    <input type="search" className='pictos__search absolute' />
-                    <img src={searchInput} alt="" />
-                    <img src={searchIcon} className='pictos__searchIcon' alt="" />
-                </div>
+                <Search />
                 <p className='pictos__paragraph'>Complétez tous les pictos</p>
-                <div className='pictos__list'>
-                    {
-                        pictosList.map((p) => (
-                            <div className='pictos__button relative'>
-                                <img src={pictoButton} alt="" />
-                                <div className='pictos__buttonText absolute horizontal'>
-                                    <div className='relative'>
-                                        <img src={pictoIconButton} className='pictos__buttonSquare' alt="" />
-                                        <img src={p.icone} className='pictos__icon absolute' alt="" />
-                                    </div>
-                                    <div className='horizontal pictos__buttonTextInfo'>
-                                        <div className='pictos__buttonTextNom'>{p.nom}</div>
-                                        <div className='pictos__buttonTextPoint'>{p.points}</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        ))
-                    }
-                </div>
+                <PictosListe 
+                    pictosList={pictosList} 
+                    selectPicto={selectPicto} 
+                    pictoButton={pictoButton} 
+                    pictoIconButton={pictoIconButton} 
+                />
             </div>
-            <div className="pictos__data">
-
+            <div className="pictos__data relative">
+                <img src={backgroundData} className='backgroundData' alt="" />
+                <div className='absolute'>
+                    <PictosDatas pictoSelected={pictoSelected}/>
+                </div>
             </div>
         </div>
     )

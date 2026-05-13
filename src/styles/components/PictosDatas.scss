@@ -1,0 +1,24 @@
+.pictosDatas{
+    width: 500px;
+}
+
+.pictos__dataEffet, .pictos__dataLocalisation{
+    font-size: 24px;
+}
+
+.pictos__dataStatistiques{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pictos__dataMonde{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pictos__dataRepos{
+    font-size: 18px;
+}
+
