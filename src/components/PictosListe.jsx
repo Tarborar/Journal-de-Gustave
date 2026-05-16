@@ -1,8 +1,10 @@
-function PictosListe({ pictosList, selectPicto, pictoButton, pictoIconButton}){
+import '../styles/components/PictosListe.scss';
+
+function PictosListe({ filteredPicto, selectPicto, pictoButton, pictoIconButton}){
     return(
         <div className='list'>
             {
-                pictosList.map((p) => (
+                filteredPicto.map((p) => (
                     <div className='pictos__button relative' onClick={() => selectPicto(p)}>
                         <img src={pictoButton} alt="" />
                         <div className='pictos__buttonText absolute horizontal'>

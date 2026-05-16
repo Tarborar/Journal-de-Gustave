@@ -13,7 +13,7 @@ function PictosDatas({ pictoSelected }){
                             <p className='cinzel mainColor'>{pictoSelected.statistiques[1]}</p>
                         </div>
                         <div>
-                            <img src={pictoSelected.icone} alt="" />
+                            <img src={pictoSelected.icone} className='pictos__dataIcone' alt="" />
                         </div>
                         <div className='pictos__dataMonde'>
                             <p className='cinzel'>{pictoSelected.monde}</p>

@@ -1,0 +1,43 @@
+@import '../utils/variables.scss';
+
+.pictos__button{
+    height: fit-content;
+    cursor: pointer;
+    &:hover{
+        .pictos__buttonText{
+            color: $main-color;
+        }
+    }
+}
+
+.pictos__buttonText{
+    width: 100%;
+    align-items: center;
+}
+
+.pictos__buttonTextInfo{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pictos__buttonTextNom{
+    font-family: 'IM Fell English';
+    font-size: 24px;
+}
+
+.pictos__buttonTextPoint{
+    font-family: 'BebasNeue-Regular';
+    font-size: 28px;
+    color: $blue-color;
+    transform: translateX(-60px);
+}
+
+.pictos__buttonSquare{
+    transform: translateX(-12px);
+}
+
+.pictos__icon{
+    transform: translate(-23px, -13px);
+    width: 50%;
+}

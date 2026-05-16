@@ -18,20 +18,27 @@ import PictosListe from '../components/PictosListe';
 import PictosDatas from '../components/PictosDatas';
 
 function Pictos(){
-    const [pictoSelected, setPictoSelected] = useState(null);
+    const [pictoSelected, setPictoSelected] = useState(null); //affichage des datas au click du picto
+    const [inputValuePicto, setInputValuePicto] = useState("");
+
+    const filteredPicto = pictosList.filter(p => {
+        return p.nom.toLowerCase().includes(inputValuePicto);
+    })
 
     function selectPicto(picto){
         setPictoSelected(picto);
         console.log(picto);
     }
 
+    console.log(inputValuePicto);
+
     return(
         <div className="pictos horizontal">
             <div className="pictos__select vertical">
-                <Search />
+                <Search setInputValuePicto={setInputValuePicto} />
                 <p className='pictos__paragraph'>Complétez tous les pictos</p>
                 <PictosListe 
-                    pictosList={pictosList} 
+                    filteredPicto={filteredPicto} 
                     selectPicto={selectPicto} 
                     pictoButton={pictoButton} 
                     pictoIconButton={pictoIconButton} 
@@ -39,7 +46,7 @@ function Pictos(){
             </div>
             <div className="pictos__data relative">
                 <img src={backgroundData} className='backgroundData' alt="" />
-                <div className='absolute'>
+                <div className='pictos__dataAbsolute'>
                     <PictosDatas pictoSelected={pictoSelected}/>
                 </div>
             </div>

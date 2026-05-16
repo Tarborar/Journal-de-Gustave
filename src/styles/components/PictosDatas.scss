@@ -1,15 +1,22 @@
 .pictosDatas{
     width: 500px;
+    overflow-y: auto;
 }
 
 .pictos__dataEffet, .pictos__dataLocalisation{
     font-size: 24px;
+    text-wrap: balance;
 }
 
 .pictos__dataStatistiques{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.pictos__dataIcone{
+    width: 75px;
+    height: auto;
 }
 
 .pictos__dataMonde{

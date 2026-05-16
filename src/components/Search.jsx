@@ -3,11 +3,15 @@ import searchIcon from '../assets/searchIcon.svg';
 
 import '../styles/components/Search.scss'
 
-function Search(){
+function Search({ setInputValuePicto }){
+    function searchPicto(e){
+        setInputValuePicto(e.target.value.toLowerCase());
+    }
+
     return(
-        <div className='relative'>
-            <input type="search" className='search absolute' />
-            <img src={searchInput} alt="" />
+        <div className='relative search'>
+            <input type="search" className='search__input absolute' onInput={searchPicto}/>
+            <img src={searchInput} className='search__image' alt="" />
             <img src={searchIcon} className='search__icon' alt="" />
         </div>
     )

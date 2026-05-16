@@ -18,42 +18,18 @@
     opacity: 0.66;
 }
 
-.pictos__buttonText{
-    width: 100%;
-    align-items: center;
-}
-
-.pictos__buttonTextInfo{
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.pictos__buttonTextNom{
-    font-family: 'IM Fell English';
-    font-size: 24px;
-}
-
-.pictos__buttonTextPoint{
-    font-family: 'BebasNeue-Regular';
-    font-size: 28px;
-    color: $blue-color;
-    transform: translateX(-30px);
-}
-
-.pictos__buttonSquare{
-    transform: translateX(-12px);
-}
-
-.pictos__icon{
-    transform: translate(-23px, -13px);
-    width: 50%;
-}
-
 .backgroundData{
     transform: translateY(-55px);
 }
 
 .pictos__data{
     text-align: center;
+}
+
+.pictos__dataAbsolute{
+    position: absolute;
+    top: 56%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    height: 100%;
 }
