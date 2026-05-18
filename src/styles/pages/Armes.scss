@@ -1,0 +1,40 @@
+@import '../utils/variables.scss';
+
+.armes{
+    justify-content: space-between;
+    height: 60vh;
+}
+
+.armes__select{
+    width: fit-content;
+    height: 100%;
+    gap: 25px;
+}
+
+.armes__paragraph{
+    text-align: center;
+    font-family: "IM Fell English";
+    font-style: italic;
+    font-size: 36px;
+    opacity: 0.66;
+}
+
+.backgroundData{
+    transform: translateY(-55px);
+}
+
+.armes__data{
+    text-align: center;
+}
+
+.armes__dataAbsolute{
+    position: absolute;
+    top: 56%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}
+
+.armes__allSelect{
+    gap: 25px;
+}

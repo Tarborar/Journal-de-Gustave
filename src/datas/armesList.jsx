@@ -14,19 +14,6 @@ export const armesList = [
     },
     {
         "personnage": "Verso",
-        "nom": "Baguette",
-        "icone": "https://static.wikia.nocookie.net/clair-obscur/images/4/48/COE33_icon_Sciel_Weapon_Debug.png/revision/latest?cb=20250507011804",
-        "element": "Vide",
-        "echelle": ["Défense", "Agilité"],
-        "effet": [
-            "Se tue au début du combat",
-            "Réapparaît avec 100% des PV. Une fois par combat",
-            "Joue en premier"
-        ],
-        "localisation": "Après être descendu dans la rue et avoir parlé à Sophie, vous pouvez croiser une boulangerie en traversant les rues de Lumière. Si vous avez un Jeton du Festival obtenu lors d'une précédente partie, interagissez avec la boulangerie avec Gustave pour obtenir l'arme. (Lumière, Prologue, NG+)"
-    },
-    {
-        "personnage": "Verso",
         "nom": "Blodam",
         "icone": "https://static.wikia.nocookie.net/clair-obscur/images/3/34/COE33_icon_Verso_Weapon_Blodam.png/revision/latest/scale-to-width-down/131?cb=20250507011840",
         "element": "Lumière",
@@ -357,19 +344,6 @@ export const armesList = [
     },
     {
         "personnage": "Lune",
-        "nom": "Baguette",
-        "icone": "https://static.wikia.nocookie.net/clair-obscur/images/4/48/COE33_icon_Sciel_Weapon_Debug.png/revision/latest?cb=20250507011804",
-        "element": "Vide",
-        "echelle": ["Défense", "Vitalité"],
-        "effet": [
-            "Se tue au début du combat",
-            "Réapparaît avec 100% des PV. Une fois par combat",
-            "Joue en premier"
-        ],
-        "localisation": "Après être descendu dans la rue et avoir parlé à Sophie, vous pouvez croiser une boulangerie en traversant les rues de Lumière. Si vous avez un Jeton du Festival obtenu lors d'une précédente partie, interagissez avec la boulangerie avec Lune pour obtenir l'arme. (Lumière, Prologue, NG+)"
-    },
-    {
-        "personnage": "Lune",
         "nom": "Benisim",
         "icone": "https://static.wikia.nocookie.net/clair-obscur/images/f/f4/COE33_icon_Lune_Weapon_Benesim.png/revision/latest?cb=20250507011559",
         "element": "Terre",
@@ -636,19 +610,6 @@ export const armesList = [
             "Génère une Tache aléatoire lors d'un tir en Visée libre"
         ],
         "localisation": "Battez le Troubadour Chromatique dans les Eaux Suspendues. L'arme peut être obtenue d'un Chalier sur le Champ de Bataille Oublié. Battez le Bourgeon près du Duelliste dans le Manoir Suspendu."
-    },
-    {
-        "personnage": "Maelle",
-        "nom": "Baguette",
-        "icone": "",
-        "element": "Vide",
-        "echelle": ["Chance", "Défense"],
-        "effet": [
-            "Se tue au début du combat",
-            "Réapparaît avec 100% des PV. Une fois par combat",
-            "Joue en premier"
-        ],
-        "localisation": "Après être descendu dans la rue et avoir parlé à Sophie, vous pouvez croiser une boulangerie en traversant les rues de Lumière. Si vous avez un Jeton du Festival obtenu lors d'une précédente partie, interagissez avec la boulangerie avec Maelle pour obtenir l'arme. (Lumière, Prologue, NG+)"
     },
     {
         "personnage": "Maelle",
@@ -960,19 +921,6 @@ export const armesList = [
     },
     {
         "personnage": "Sciel",
-        "nom": "Baguette",
-        "icone": "https://static.wikia.nocookie.net/clair-obscur/images/4/48/COE33_icon_Sciel_Weapon_Debug.png/revision/latest?cb=20250507011804",
-        "element": "Vide",
-        "echelle": ["Chance", "Agilité"],
-        "effet": [
-            "Se tue au début du combat",
-            "Réapparaît avec 100% des PV. Une fois par combat",
-            "Joue en premier"
-        ],
-        "localisation": "Après être descendu dans la rue et avoir parlé à Sophie, vous pouvez croiser une boulangerie en traversant les rues de Lumière. Si vous avez un Jeton du Festival obtenu lors d'une précédente partie, interagissez avec la boulangerie avec Sciel pour obtenir l'arme. (Lumière, Prologue, NG+)"
-    },
-    {
-        "personnage": "Sciel",
         "nom": "Blizzon",
         "icone": "https://static.wikia.nocookie.net/clair-obscur/images/6/67/COE33_icon_Sciel_Weapon_Blizzon.png/revision/latest?cb=20250507011800",
         "element": "Glace",
@@ -1226,19 +1174,6 @@ export const armesList = [
             "Rejoue en entrant dans l'état Crépuscule"
         ],
         "localisation": "Obtenu comme récompense pour avoir vaincu le boss Sirène."
-    },
-    {
-        "personnage": "Monoco",
-        "nom": "Baguette",
-        "icone": "",
-        "element": "Vide",
-        "echelle": ["Agilité", "Vitalité"],
-        "effet": [
-            "Se tue au début du combat",
-            "Réapparaît avec 100% des PV. Une fois par combat",
-            "Joue en premier"
-        ],
-        "localisation": "Après être descendu dans la rue et avoir parlé à Sophie, vous pouvez croiser une boulangerie en traversant les rues de Lumière. Si vous avez un Jeton du Festival obtenu lors d'une précédente partie, interagissez avec la boulangerie avec Monoco pour obtenir l'arme. (Lumière, Prologue, NG+)"
     },
     {
         "personnage": "Monoco",

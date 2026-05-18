@@ -1,0 +1,65 @@
+.armesDatas{
+    width: 550px;
+    height: 70vh;
+    overflow-y: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    direction: rtl;
+    > * {
+        direction: ltr;
+    }
+
+    align-items: center;
+}
+
+.armes__dataEffet, .armes__dataLocalisation{
+    font-size: 24px;
+    text-wrap: balance;
+}
+
+.armes__dataIcone{
+    height: 120px;
+    width: auto;
+}
+
+.armes__echelle{
+    text-align: center;
+}
+
+.armes__echelleRank, .armes__niveauNombre{
+    font-size: 78px;
+}
+
+.armes__niveau{
+    font-size: 24px;
+}
+
+.armes__effets{
+    gap: 16px;
+}
+
+.armes__effet{
+    font-size: 24px;
+    text-align: start;
+}
+
+.armes__effetText{
+    gap: 25px;
+    align-items: center;
+}
+
+.armes__niveauUn{
+    color: #A7C8FF;
+}
+
+.armes__niveauDeux{
+    color: #C2A2FF;
+}
+
+.armes__niveauTrois{
+    color: #FFEACC;
+}
+
+
+

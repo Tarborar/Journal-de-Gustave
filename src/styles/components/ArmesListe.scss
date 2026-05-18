@@ -1,0 +1,49 @@
+@import '../utils/variables.scss';
+
+.armes__button{
+    height: fit-content;
+    cursor: pointer;
+    &:hover{
+        .armes__buttonText{
+            color: $main-color;
+        }
+    }
+}
+
+.armes__buttonText{
+    width: 100%;
+    align-items: center;
+}
+
+.armes__buttonTextInfo{
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+}
+
+.armes__buttonTextNom{
+    font-family: 'IM Fell English';
+    font-size: 24px;
+    width: 70%;
+}
+
+.armes__buttonTextPoint{
+    font-family: 'BebasNeue-Regular';
+    font-size: 28px;
+    color: $blue-color;
+    transform: translateX(-60px);
+}
+
+.armes__buttonSquare{
+    transform: translateX(-12px);
+}
+
+.armes__icon{
+    margin-left: 30px;
+    height: 50px;
+    width: auto;
+}
+
+.rotate{
+    transform: rotate(45deg);
+}

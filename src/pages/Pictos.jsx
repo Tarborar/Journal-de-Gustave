@@ -19,10 +19,10 @@ import PictosDatas from '../components/PictosDatas';
 
 function Pictos(){
     const [pictoSelected, setPictoSelected] = useState(null); //affichage des datas au click du picto
-    const [inputValuePicto, setInputValuePicto] = useState("");
+    const [inputValue, setInputValue] = useState("");
 
     const filteredPicto = pictosList.filter(p => {
-        return p.nom.toLowerCase().includes(inputValuePicto);
+        return p.nom.toLowerCase().includes(inputValue);
     })
 
     function selectPicto(picto){
@@ -30,12 +30,12 @@ function Pictos(){
         console.log(picto);
     }
 
-    console.log(inputValuePicto);
+    console.log(inputValue);
 
     return(
         <div className="pictos horizontal">
             <div className="pictos__select vertical">
-                <Search setInputValuePicto={setInputValuePicto} />
+                <Search setInputValue={setInputValue} />
                 <p className='pictos__paragraph'>Complétez tous les pictos</p>
                 <PictosListe 
                     filteredPicto={filteredPicto} 
