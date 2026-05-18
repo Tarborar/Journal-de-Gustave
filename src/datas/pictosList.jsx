@@ -1482,7 +1482,7 @@ export const pictosList = [
   {
     "nom": "Teinte chargeante",
     "effet": "+5% de charge Gradient en utilisant un objet.",
-    "icone": "",
+    "icone": "https://static.wikia.nocookie.net/clair-obscur-expedition-33/images/7/79/COE33_pictos_vert_4.png/revision/latest/scale-to-width-down/48?cb=20251004144255&path-prefix=fr",
     "points": "2",
     "statistiques": ["", ""],
     "monde": "Continent",
