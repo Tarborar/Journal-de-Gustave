@@ -1,0 +1,41 @@
+.backgroundJournal{
+    width: 600px;
+    height: auto;
+    display: block;
+    transform: scaleX(-1);
+}
+
+.journal__paragraph{
+    text-align: center;
+    font-family: "IM Fell English";
+    font-style: italic;
+    font-size: 36px;
+    opacity: 0.66;
+}
+
+.journaux__select{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 30px;
+    height: 65vh;
+    margin-left: -20px;
+    margin-top: -50px;
+}
+
+.journalButton{
+    width: 90px;
+    height: 90px;
+}
+
+.journaux__carre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    
+    font-size: 48px;
+}

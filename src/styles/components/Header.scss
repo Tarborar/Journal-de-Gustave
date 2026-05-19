@@ -13,8 +13,11 @@
 
 nav a.active{
     .header__buttonText{
-            color: $main-color;
-        }
+        color: $main-color;
+    }
+    .header__button{
+        transform: scale(1.1);
+    }
 }
 
 .header__buttonText{
