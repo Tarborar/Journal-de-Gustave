@@ -20,9 +20,10 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding-left: 30px;
-    height: 65vh;
-    margin-left: -20px;
-    margin-top: -50px;
+    height: 60vh;
+    margin-left: -10px;
+    margin-top: -70px;
+    padding-right: 20px;
 }
 
 .journalButton{
@@ -36,6 +37,58 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.1;
-    
     font-size: 48px;
+}
+
+.journaux__carreName{
+    font-family: Cinzel;
+    font-size: 21px;
+    text-align: center;
+}
+
+.journal__numero, .journal__contenu, .journal__localisation{
+    font-size: 24px;
+    white-space: pre-line;
+}
+
+.journal__monde{
+    font-size: 18px;
+}
+
+.journal__content, .journal__obtention{
+    flex: 1;
+}
+
+.journal__content{
+    height: 100%;
+    overflow-y: auto;
+    padding-left: 30px;
+    margin-right: 50px;
+
+    direction: rtl;
+    
+    //Ré-inverse le contenu pour qu'il reste normal
+    > * {
+        direction: ltr;
+    }
+}
+
+.journal__obtention{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verticalLine{
+    height: 75%;
+    width: auto;
+}
+
+.journal__data{
+    margin-top: 100px;
+    height: 63vh;
+}
+
+.journal__obtentionInfo{
+    gap: 16px;
 }
