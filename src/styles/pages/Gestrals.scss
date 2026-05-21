@@ -1,0 +1,82 @@
+@import '../utils/variables.scss';
+
+.gestrals{
+    justify-content: space-between;
+    height: 75vh;
+}
+
+.gestrals__select{
+    height: 100%;
+    gap: 16px;
+}
+
+.gestrals__paragraph{
+    text-align: center;
+    font-family: "IM Fell English";
+    font-style: italic;
+    font-size: 36px;
+    opacity: 0.66;
+}
+
+.backgroundData{
+    transform: translateY(-55px);
+}
+
+.gestrals__data{
+    text-align: center;
+}
+
+.gestrals__dataAbsolute{
+    position: absolute;
+    top: 56%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}
+
+.gestralButton{
+    transform: scaleY(-1);
+}
+
+.gestrals__button{
+    height: fit-content;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    &:hover{
+        transform: scale(1.05);
+        .pictos__buttonText{
+            color: $main-color;
+        }
+    }
+}
+
+.gestral__buttonText{
+    width: 100%;
+    align-items: center;
+}
+
+.gestrals__buttonTextInfo{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gestrals__buttonTextNom{
+    font-family: 'IM Fell English';
+    font-size: 24px;
+    width: 70%;
+}
+
+.gestrals__buttonTextNumero{
+    font-family: 'BebasNeue-Regular';
+    font-size: 28px;
+    transform: translateX(-30px);
+}
+
+.gestrals__list{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    flex-wrap: wrap;
+    height: 100%;
+}

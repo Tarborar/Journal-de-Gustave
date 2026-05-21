@@ -24,7 +24,7 @@ export const gestralsList = [
         "numero": "4",
         "monde": "Gare de Monoco",
         "localisation": "Une fois que vous avez terminé le donjon du Champ de Bataille Oublié, vous trouverez un Gestral perdu à l'extérieur de la Gare de Monoco. Il se tient entre deux arbres et peut être difficile à repérer.",
-        "recompense": "Brise Peinture, vous permet de briser les pointes de peinture",
+        "recompense": "Brise Peinture",
         "images": ["Gestral_4_Monde.webp", "Gestral_4_Localisation.webp"]
     },
     {

@@ -1,0 +1,37 @@
+.gestralsDatas{
+    width: 550px;
+    height: 70vh;
+    overflow-y: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    direction: rtl;
+    > * {
+        direction: ltr;
+    }
+}
+
+.gestralsDatas__localisation{
+    font-size: 24px;
+}
+
+.gestralsDatas__recompenseInfo{
+    gap: 16px;
+}
+
+.gestralsDatas__recompenseTitle{
+    font-size: 24px;
+}
+
+.gestralsDatas__recompense{
+    font-size: 18px;
+}
+
+.gestralsDatas__images{
+    gap: 16px;
+}
+
+.gestralsDatas__image{
+    width: 50%;
+    height: auto;
+}
