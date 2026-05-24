@@ -1,0 +1,35 @@
+@import '../utils/variables.scss';
+
+.disques{
+    justify-content: space-between;
+    height: 75vh;
+}
+
+.disques__select{
+    height: 100%;
+    gap: 16px;
+}
+
+.disques__paragraph{
+    text-align: center;
+    font-family: "IM Fell English";
+    font-style: italic;
+    font-size: 36px;
+    opacity: 0.66;
+}
+
+.backgroundData{
+    transform: translateY(-55px);
+}
+
+.disques__data{
+    text-align: center;
+}
+
+.disques__dataAbsolute{
+    position: absolute;
+    top: 56%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}

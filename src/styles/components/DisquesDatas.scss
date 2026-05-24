@@ -1,0 +1,42 @@
+.disquesDatas{
+    width: 550px;
+    height: 70vh;
+    overflow-y: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    direction: rtl;
+    > * {
+        direction: ltr;
+    }
+}
+
+.disques__dataEffet, .disques__dataLocalisation{
+    font-size: 24px;
+    text-wrap: balance;
+}
+
+.disques__dataIcone{
+    width: 75px;
+    height: auto;
+}
+
+.disques__dataMonde{
+    margin-top: -50px;
+}
+
+.titleDecoration{
+    transform: translate(-30px, 20px);
+    width: 550px;
+    height: auto;
+}
+
+.disques__dataMondeText{
+    width: 100%;
+}
+
+.disques__dataVideo{
+    width: auto;
+    height: 100%;
+}
+

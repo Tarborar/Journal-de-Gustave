@@ -1,0 +1,36 @@
+@import '../utils/variables.scss';
+
+.disques__button{
+    height: fit-content;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    &:hover{
+        transform: scale(1.05);
+        .pictos__buttonText{
+            color: $main-color;
+        }
+    }
+}
+
+.disques__buttonText{
+    width: 100%;
+    align-items: center;
+}
+
+.disques__buttonTextInfo{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.disques__buttonTextNom{
+    font-family: 'IM Fell English';
+    font-size: 24px;
+    width: 80%;
+}
+
+.disques__buttonSquare{
+    transform: translateX(-12px);
+    width: 75px;
+    height: auto;
+}
