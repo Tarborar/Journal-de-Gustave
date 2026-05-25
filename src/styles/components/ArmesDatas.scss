@@ -4,12 +4,6 @@
     overflow-y: auto;
     padding-left: 30px;
     padding-right: 30px;
-
-    direction: rtl;
-    > * {
-        direction: ltr;
-    }
-
     align-items: center;
 }
 
@@ -28,7 +22,7 @@
 }
 
 .armes__echelleRank, .armes__niveauNombre{
-    font-size: 78px;
+    font-size: 60px;
 }
 
 .armes__niveau{
@@ -37,6 +31,7 @@
 
 .armes__effets{
     gap: 16px;
+    margin-top: -25px;
 }
 
 .armes__effet{

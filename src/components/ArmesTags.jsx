@@ -2,7 +2,7 @@ import '../styles/components/ArmesTags.scss';
 
 function ArmesTags({ armeButton, dropdownArrow }){
     return(
-        <ul className='horizontal'>
+        <ul className='horizontal armesTags'>
             <li className='relative'>
                 <img src={armeButton} alt=""/>
                 <div className='horizontal tag__info absolute'>

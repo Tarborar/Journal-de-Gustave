@@ -1,0 +1,10 @@
+.character{
+    cursor: pointer;
+    &:hover{
+        filter: drop-shadow(0 0 8px #ECCFA3);
+    }
+}
+
+.characterActive{
+    filter: drop-shadow(0 0 8px #ECCFA3);
+}

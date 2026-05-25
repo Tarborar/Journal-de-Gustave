@@ -63,14 +63,6 @@ body::before{
     overflow-y: auto;
     overflow-x: hidden;
     padding-left: 30px;
-    
-    //Inverse la direction pour mettre la scrollbar à gauche
-    direction: rtl;
-    
-    //Ré-inverse le contenu pour qu'il reste normal
-    > * {
-        direction: ltr;
-    }
 }
 
 .gap{

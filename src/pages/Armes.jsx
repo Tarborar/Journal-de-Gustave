@@ -23,9 +23,15 @@ import ArmesTags from '../components/ArmesTags';
 function Armes(){
     const [armeSelected, setArmeSelected] = useState(null); //affichage des datas au click du picto
     const [inputValue, setInputValue] = useState("");
+    const [characterTag, setCharacterTag] = useState(null);
+    const [elementTag, setElementTag] = useState(null);
+    const [attributSTag, setAttributSTag] = useState(null);
+    const [attributATag, setAttributATag] = useState(null);
 
     const filteredArme = armesList.filter(p => {
-        return p.nom.toLowerCase().includes(inputValue);
+        return (
+            p.nom.toLowerCase().includes(inputValue) && characterTag ? p.personnage === characterTag : true
+        )
     })
 
     function selectArme(picto){
@@ -38,7 +44,7 @@ function Armes(){
     return(
         <div className="armes horizontal">
             <div className="vertical armes__allSelect">
-                <PersonnagesListe />
+                <PersonnagesListe characterTag={characterTag} setCharacterTag={setCharacterTag} />
                 <div className='vertical armes__select'>
                     <Search setInputValue={setInputValue} />
                     <ArmesTags armeButton={armeButton} dropdownArrow={dropdownArrow}/>

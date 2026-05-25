@@ -24,7 +24,6 @@
 .armes__buttonTextNom{
     font-family: 'IM Fell English';
     font-size: 24px;
-    width: 70%;
 }
 
 .armes__buttonTextPoint{
@@ -46,4 +45,14 @@
 
 .rotate{
     transform: rotate(45deg);
+}
+
+.element{
+    position: absolute;
+    right: 50px;
+}
+
+.elementImage{
+    width: 32px;
+    height: auto;
 }
