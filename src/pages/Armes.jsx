@@ -24,15 +24,18 @@ function Armes(){
     const [armeSelected, setArmeSelected] = useState(null); //affichage des datas au click du picto
     const [inputValue, setInputValue] = useState("");
     const [characterTag, setCharacterTag] = useState(null);
-    const [elementTag, setElementTag] = useState(null);
-    const [attributSTag, setAttributSTag] = useState(null);
-    const [attributATag, setAttributATag] = useState(null);
+    
+    const [elementSelected, setElementSelected] = useState('Élément');
+    const [rankSSelected, setRankSSelected] = useState('Attribut S');
+    const [rankASelected, setRankASelected] = useState('Attribut A');
 
-    const filteredArme = armesList.filter(p => {
-        return (
-            p.nom.toLowerCase().includes(inputValue) && characterTag ? p.personnage === characterTag : true
-        )
-    })
+    const filteredArme = armesList.filter(p => 
+        p.nom.toLowerCase().includes(inputValue) &&
+        (!characterTag || p.personnage === characterTag) &&
+        (elementSelected === 'Élément' || p.element === elementSelected) &&
+        (rankSSelected === 'Attribut S' || p.echelle?.includes(rankSSelected)) &&
+        (rankASelected === 'Attribut A' || p.echelle?.includes(rankASelected))
+    );
 
     function selectArme(picto){
         setArmeSelected(picto);
@@ -47,7 +50,16 @@ function Armes(){
                 <PersonnagesListe characterTag={characterTag} setCharacterTag={setCharacterTag} />
                 <div className='vertical armes__select'>
                     <Search setInputValue={setInputValue} />
-                    <ArmesTags armeButton={armeButton} dropdownArrow={dropdownArrow}/>
+                    <ArmesTags 
+                        armeButton={armeButton} 
+                        dropdownArrow={dropdownArrow}
+                        elementSelected={elementSelected}
+                        setElementSelected={setElementSelected}
+                        rankSSelected={rankSSelected}
+                        setRankSSelected={setRankSSelected}
+                        rankASelected={rankASelected}
+                        setRankASelected={setRankASelected}
+                    />
                     <p className='armes__paragraph'>Complétez toutes les armes</p>
                     <ArmesListe 
                         filteredArme={filteredArme} 

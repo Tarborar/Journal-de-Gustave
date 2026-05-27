@@ -18,3 +18,19 @@
 .armesTags{
     max-width: 600px;
 }
+
+.tag__dropdown{
+    background-color: #1A1818;
+    border: solid 1px #9D9C87;
+    padding: 16px;
+    gap: 16px;
+    width: 75%;
+    position: absolute;
+    margin: 16px 0 0 32px;
+    z-index: 1;
+}
+
+.tag__dropdownText{
+    font-size: 16px;
+    color: white;
+}
