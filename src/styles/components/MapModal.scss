@@ -1,0 +1,35 @@
+.mapModal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.imageModal{
+    width: 957px;
+    height: 537px;
+}
+
+.cadreModale{
+    width: 960px;
+    height: 540px;
+    z-index: 2;
+}
+
+.fermetureModale{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 54px;
+    height: auto;
+    top: 0;
+    right: -54px;
+    z-index: 2;
+}
+
+.modalOverlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba($color: black, $alpha: 0.75);
+}

@@ -25,7 +25,7 @@ function Journaux(){
     }
 
     return(
-        <div className='horizontal'>
+        <div className='horizontal journal'>
             <div className='vertical'>
                 <p className='journal__paragraph'>Complétez tous les journaux</p>
                 <div className='relative'>

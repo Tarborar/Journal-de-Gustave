@@ -33,8 +33,8 @@ function Armes(){
         p.nom.toLowerCase().includes(inputValue) &&
         (!characterTag || p.personnage === characterTag) &&
         (elementSelected === 'Élément' || p.element === elementSelected) &&
-        (rankSSelected === 'Attribut S' || p.echelle?.includes(rankSSelected)) &&
-        (rankASelected === 'Attribut A' || p.echelle?.includes(rankASelected))
+        (rankSSelected === 'Attribut S' || p.echelle[0]?.includes(rankSSelected)) &&
+        (rankASelected === 'Attribut A' || p.echelle[1]?.includes(rankASelected))
     );
 
     function selectArme(picto){
