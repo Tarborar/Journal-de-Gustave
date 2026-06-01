@@ -33,3 +33,10 @@
     transform: translate(-50%, -50%);
     height: 100%;
 }
+
+@media screen and (max-width: 1440px){
+    .pictos__paragraph{
+        text-align: start;
+        margin-left: 30px;
+    }
+}

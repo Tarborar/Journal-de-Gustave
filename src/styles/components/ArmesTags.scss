@@ -1,7 +1,6 @@
 @import '../utils/variables.scss';
 
 .tag__info{
-    justify-content: space-between;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -61,4 +60,16 @@
     height: 100vh;
     top: 0;
     left: 0;
+}
+
+@media screen and (max-width: 1440px){
+    .armesTags{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tag__info{
+        justify-content: start;
+        padding-left: 50px;
+    }
 }

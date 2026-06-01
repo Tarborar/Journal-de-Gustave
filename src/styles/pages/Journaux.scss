@@ -95,3 +95,40 @@
 .journal__obtentionInfo{
     gap: 16px;
 }
+
+@media screen and (max-width: 1440px) {
+    .journal__data {
+        flex-direction: column;
+    }
+    
+    .verticalLine {
+        display: none;
+    }
+    .cursor {
+        display: none;
+    }
+
+    .journal__monde{
+        font-size: 24px;
+    }
+    
+    .journal__content {
+        order: 2;
+        padding-left: 0;
+        margin-right: 0;
+    }
+    
+    .journal__obtention {
+        order: 1;
+        margin-bottom: 50px;
+    }
+
+    .journal__contenu {
+        height: auto;
+        max-height: 40vh;
+    }
+
+    .journal__obtention{
+        gap: 0;
+    }
+}

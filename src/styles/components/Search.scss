@@ -34,9 +34,21 @@
     top: 50%;
     left: 8%;
     transform: translate(-50%, -50%);
-    width: 3.5%;
+    width: 27px;
+    height: auto;
 }
 
 input:focus{
     outline: none;
+}
+
+@media screen and (max-width: 1440px){
+    .search__icon{
+        left: 15%;
+    }
+
+    .search__input{
+        padding-left: 23%;
+        padding-right: 11%;
+    }
 }

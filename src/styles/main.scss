@@ -106,3 +106,12 @@ body::before{
     border: 1px solid #9D9C87;
 }
 
+@media screen and (max-width: 1440px){
+    .list{
+        grid-template-columns: repeat(1, 1fr);
+        padding-right: 20px;
+    }
+
+
+}
+

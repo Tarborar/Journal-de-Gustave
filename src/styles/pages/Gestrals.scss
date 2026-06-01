@@ -79,4 +79,13 @@
     gap: 35px;
     flex-wrap: wrap;
     height: 100%;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1440px){
+    .gestrals__list{
+        overflow-y: auto;
+        flex-wrap: nowrap;
+        padding: 16px;
+    }
 }
