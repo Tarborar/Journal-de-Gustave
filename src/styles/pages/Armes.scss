@@ -38,3 +38,9 @@
 .armes__allSelect{
     gap: 25px;
 }
+
+@media screen and (max-width: 1024px){
+    .armes__data{
+        transform: translateY(24px);
+    }
+}

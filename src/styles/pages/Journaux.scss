@@ -132,3 +132,10 @@
         gap: 0;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .previousCursor{
+        width: 94px;
+        height: auto;
+    }
+}

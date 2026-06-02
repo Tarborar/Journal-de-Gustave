@@ -73,3 +73,19 @@
         padding-left: 50px;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .armesTags{
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .armesTags > li{
+        margin-left: -20px;
+    }
+
+    .tag__info{
+        width: 100%;
+        gap: 16px;
+    }
+}

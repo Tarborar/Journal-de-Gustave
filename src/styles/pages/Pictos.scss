@@ -40,3 +40,30 @@
         margin-left: 30px;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .pictos{
+        height: 71vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pictos__paragraph{
+        text-align: center;
+        margin: 0;
+    }
+
+    .pictos__data{
+        transform: translateY(24px);
+    }
+
+    .closeModal{
+        position: absolute;
+        height: 53px;
+        width: 53px;
+        top: -30px;
+        right: 30px;
+    }
+}

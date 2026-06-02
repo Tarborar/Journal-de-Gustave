@@ -52,3 +52,26 @@ input:focus{
         padding-right: 11%;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .search{
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .search__image{
+        height: 48px;
+        width: auto;
+    }
+
+    .search__icon{
+        left: 7%;
+    }
+
+    .search__input{
+        padding-left: 12%;
+        padding-right: 4%;
+    }
+}
