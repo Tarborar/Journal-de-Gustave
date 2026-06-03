@@ -134,8 +134,28 @@
 }
 
 @media screen and (max-width: 1024px){
+    .journal{
+        justify-content: center;
+    }
+
+    .journaux__select{
+        padding-top: 24px;
+    }
+
     .previousCursor{
-        width: 94px;
+        width: 55px;
         height: auto;
+        transform: scaleX(-1);
+        margin-bottom: 24px;
+    }
+    .journal__data{
+        margin-top: 24px;
+    }
+    .journal__obtention{
+        justify-content: start;
+    }
+
+    .journal__content, .journal__obtention{
+        flex: 0;
     }
 }

@@ -89,3 +89,18 @@
         padding: 16px;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .gestrals{
+        justify-content: center;
+    }
+
+    .gestrals__list{
+        overflow-y: none;
+        flex-wrap: wrap;
+    }
+
+    .gestrals__data{
+        transform: translateY(24px);
+    }
+}

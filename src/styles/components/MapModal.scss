@@ -33,3 +33,15 @@
     height: 100vh;
     background: rgba($color: black, $alpha: 0.75);
 }
+
+@media screen and (max-width: 1024px){
+    .imageModal{
+        width: 90vw;
+        height: auto;
+    }
+
+    .cadreModale{
+        width: calc(90vw + 3px);
+        height: auto;
+    }
+}

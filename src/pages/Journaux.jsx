@@ -28,18 +28,52 @@ function Journaux(){
 
     function selectJournal(journal){
         setJournalSelected(journal);
+        setIsJournalOpen(true);
         console.log(journal);
     }
 
     return(
         <div>
-            <HeaderTablet />
+            {isTablet ? <HeaderTablet /> : null}
             {isTablet && isJournalOpen ? (
-                null
+                <div className='horizontal journal'>
+                    <div className='journal__data horizontal'>
+                        <div>
+                            <img src={cursor} className='previousCursor' onClick={() => setIsJournalOpen(false)} alt="" />
+                        </div>
+                        <div className='journal__content'>
+                            {
+                                journalSelected ? (
+                                    <div className='vertical gap'>
+                                        <p className='cinzel journal__numero mainColor'>
+                                            {journalSelected.nom ? `Journal - ${journalSelected.numero}` : `Journal - Expédition ${journalSelected.numero}`}
+                                        </p>
+                                        <p className='imEnglish journal__contenu'>{journalSelected.contenu}</p>
+                                    </div>
+                                ) : (
+                                    null
+                                )
+                            }
+                        </div>
+                        <div className='journal__obtention gap'>
+                            <div>
+                                <img src={cursor} className='cursor' alt="" />
+                            </div>
+                            {
+                                journalSelected ? (
+                                    <div className='vertical journal__obtentionInfo'>
+                                        <p className='cinzel journal__monde mainColor'>{journalSelected.monde}</p>
+                                        <p className='imEnglish journal__localisation imEnglishItalic'>{journalSelected.localisation}</p>
+                                    </div>
+                                ) : (
+                                    null
+                                )
+                            }
+                        </div>
+                    </div>
+                </div>
             ) : (
-                null
-            )}
-            <div className='horizontal journal'>
+                <div className='horizontal journal'>
                 <div className='vertical'>
                     <p className='journal__paragraph'>Complétez tous les journaux</p>
                     <div className='relative'>
@@ -54,7 +88,8 @@ function Journaux(){
                         </div>
                     </div>
                 </div>
-                <div className='journal__data horizontal'>
+                {isTablet ? null : (
+                    <div className='journal__data horizontal'>
                     <div>
                         <img src={verticalLine} className='verticalLine' alt="" />
                     </div>
@@ -88,7 +123,9 @@ function Journaux(){
                         }
                     </div>
                 </div>
+                )}
             </div>
+            )}
         </div>
         
     )
