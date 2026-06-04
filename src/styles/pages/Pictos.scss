@@ -67,3 +67,29 @@
         right: 30px;
     }
 }
+
+@media screen and (max-width: 767px){
+    .pictos__paragraph{
+        font-size: 28px;
+    }
+
+    .backgroundData{
+        margin-top: 16px;
+        width: 360px;
+    }
+
+    .pictos__data{
+        transform: translate(-12px, 24px);
+    }
+
+    .pictos__dataAbsolute{
+        width: 100%;
+    }
+
+    .closeModal{
+        height: 48px;
+        width: 48px;
+        top: -35px;
+        right: -20px;
+    }
+}

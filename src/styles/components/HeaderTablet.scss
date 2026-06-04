@@ -16,3 +16,18 @@
     width: 200px;
     height: auto;
 }
+
+@media screen and (max-width: 767px){
+    .hamburgerButton{
+        position: fixed;
+        top: 16px;
+        left: 16px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .logoTablet{
+        height: 48px;
+        width: auto;
+    }
+}

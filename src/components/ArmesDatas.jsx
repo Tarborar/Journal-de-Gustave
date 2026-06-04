@@ -8,9 +8,9 @@ function ArmesDatas({ armeSelected }){
                     <div className='armesDatas vertical gap'>
                         <p className='cinzel mainColor'>{armeSelected.nom}</p>
                         <p className='armes__dataEffet imEnglishItalic'>{armeSelected.localisation}</p>
-                        <div className='gap horizontal'>
+                        <div className='gap horizontal armes__image'>
                             <img src={armeSelected.icone} className={`armes__dataIcone ${armeSelected.personnage !== 'Lune' ? 'rotate' : ''}`}  alt="" />
-                            <div className="horizontal gap">
+                            <div className="horizontal gap ">
                                 <div className="armes__echelle vertical">
                                     <p className='cinzel'>{armeSelected.echelle[0]}</p>
                                     <p className='armes__echelleRank cinzel mainColor'>S</p>

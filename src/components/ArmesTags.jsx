@@ -81,7 +81,7 @@ function ArmesTags({ armeButton, dropdownArrow, elementSelected, setElementSelec
             <ul className='horizontal armesTags'>
                 <li className='relative'>
                     <div onClick={toggleElementDropdown}>
-                        <img src={armeButton} alt=""/>
+                        <img src={armeButton} className='armeButtonTagImage' alt=""/>
                         <div className='horizontal tag__info absolute'>
                             <p className='tag__text cinzel'>{elementSelected}</p>
                             <img src={dropdownArrow} className='tag__arrow' alt="" />
@@ -98,7 +98,7 @@ function ArmesTags({ armeButton, dropdownArrow, elementSelected, setElementSelec
                 </li>
                 <li className='relative'>
                     <div onClick={toggleRankSDropdown}>
-                        <img src={armeButton} alt=""/>
+                        <img src={armeButton} className='armeButtonTagImage' alt=""/>
                         <div className='horizontal tag__info absolute'>
                             <p className='tag__text cinzel'>{rankSSelected}</p>
                             <img src={dropdownArrow} className='tag__arrow' alt="" />
@@ -115,7 +115,7 @@ function ArmesTags({ armeButton, dropdownArrow, elementSelected, setElementSelec
                 </li>
                 <li className='relative'>
                     <div onClick={toggleRankADropdown}>
-                        <img src={armeButton} alt=""/>
+                        <img src={armeButton} className='armeButtonTagImage' alt=""/>
                         <div className='horizontal tag__info absolute'>
                             <p className='tag__text cinzel'>{rankASelected}</p>
                             <img src={dropdownArrow} className='tag__arrow' alt="" />

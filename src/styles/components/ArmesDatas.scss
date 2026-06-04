@@ -56,5 +56,31 @@
     color: #FFEACC;
 }
 
+@media screen and (max-width: 767px){
+    .armesDatas{
+        gap: 16px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 0;
+    }
+    .armes__dataEffet, .armes__dataLocalisation{
+        font-size: 18px;
+    }
+    .armes__echelleRank, .armes__niveauNombre{
+        font-size: 36px;
+    }
+    .armes__niveau{
+        font-size: 18px;
+    }
+    .armes__effet{
+        font-size: 18px;
+    }
+    .armes__image{
+        align-items: center;
+        margin-bottom: 16px;
+        gap: 24px;
+    }
+}
+
 
 

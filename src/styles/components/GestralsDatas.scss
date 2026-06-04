@@ -35,3 +35,37 @@
     margin-top: -25px;
     margin-bottom: -25px;
 }
+
+@media screen and (max-width: 767px){
+    .gestralsDatas{
+        gap: 16px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 0;
+    }
+    .gestralsDatas__localisation{
+        font-size: 18px;
+    }
+    .gestralImage{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        width: 50px;
+    }
+    .gestralsDatas__recompense{
+        font-size: 18px;
+    }
+    .gestralsDatas__recompense{
+        font-size: 16px;
+    }
+    .gestralsDatas__images{
+        display: flex;
+        justify-content: center;
+    }
+    .gestralsDatas__image{
+        width: 40%;
+        height: auto;
+    }
+    .gestralsDatas__localisation{
+        margin: 0 32px;
+    }
+}

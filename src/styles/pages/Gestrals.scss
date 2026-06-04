@@ -104,3 +104,30 @@
         transform: translateY(24px);
     }
 }
+
+@media screen and (max-width: 767px){
+    .gestrals__paragraph{
+        font-size: 28px;
+    }
+
+    .gestrals__data{
+        transform: translate(-12px, 24px);
+    }
+
+    .gestrals__dataAbsolute{
+        width: 100%;
+    }
+
+    .gestrals__list{
+        overflow-y: none;
+        flex-wrap: nowrap;
+    }
+
+    .gestrals__buttonTextNom{
+        font-size: 21px;
+    }
+
+    .gestrals__buttonTextNumero{
+        font-size: 21px;
+    }
+}

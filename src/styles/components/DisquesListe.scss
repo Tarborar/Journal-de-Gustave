@@ -34,3 +34,9 @@
     width: 75px;
     height: auto;
 }
+
+@media screen and (max-width: 767px){
+    .disques__buttonTextNom{
+        font-size: 21px;
+    }
+}

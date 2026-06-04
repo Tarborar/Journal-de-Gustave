@@ -39,3 +39,17 @@
         transform: translateY(24px);
     }
 }
+
+@media screen and (max-width: 767px){
+    .disques__paragraph{
+        font-size: 28px;
+    }
+
+    .disques__data{
+        transform: translate(-12px, 24px);
+    }
+
+    .disques__dataAbsolute{
+        width: 100%;
+    }
+}

@@ -36,7 +36,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "EB Garamond";
-    font-size: 24px;
     color: $main-color;
     font-size: 48px;
 }
@@ -48,5 +47,15 @@
 
     .home__button{
         display: none;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .home__logo{
+        width: 200px;
+    }
+
+    .home__paragraph{
+        font-size: 24px;
     }
 }

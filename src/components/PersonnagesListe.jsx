@@ -26,7 +26,9 @@ function PersonnagesListe({ characterTag, setCharacterTag }){
     return (
         <ul className='personnageListe horizontal'>
             {characters.map((c) => (
-                <li key={c.name} className={`${characterTag === c.name ? 'characterActive' : ''} character`} onClick={() => selectCharacter(c)}><img src={c.image} className='characterImage' alt="" /></li>
+                <li key={c.name} className={`${characterTag === c.name ? 'characterActive' : ''} character`} onClick={() => selectCharacter(c)}>
+                    <img src={c.image} className='characterImage' alt="" />
+                </li>
             ))}
         </ul>
     )

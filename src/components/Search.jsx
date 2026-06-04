@@ -15,7 +15,7 @@ function Search({ setInputValue }){
     return(
         <div className='relative search'>
             <input type="search" className='search__input absolute' onInput={search}/>
-            {(windowWidth < 1440 && windowWidth > 1024) ? 
+            {(windowWidth < 1440 && windowWidth > 1024) || windowWidth < 767 ?
                 <img src={smallSearchInput} className='search__image' alt="" /> 
                 :
                 <img src={searchInput} className='search__image' alt="" />}

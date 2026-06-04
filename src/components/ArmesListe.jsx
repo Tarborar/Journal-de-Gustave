@@ -25,7 +25,7 @@ function ArmesListe({ filteredArme, selectArme, pictoButton }){
     };
 
     return(
-        <div className='list'>
+        <div className='armesListe list'>
             {
                 filteredArme.map((a) => (
                     <div key={a.nom} className='armes__button relative' onClick={() => selectArme(a)}>

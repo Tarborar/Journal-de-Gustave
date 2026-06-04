@@ -40,3 +40,30 @@
     height: 100%;
 }
 
+@media screen and (max-width: 767px){
+    .disquesDatas{
+        gap: 16px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 0;
+        overflow-x: none;
+    }
+    .disques__dataEffet, .disques__dataLocalisation{
+        font-size: 18px;
+    }
+    .disques__dataIcone{
+        width: 50px;
+    }
+    .titleDecoration{
+        transform: translate(-20px, 15px);
+        width: 100vw;
+        height: auto;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .disques__dataVideo{
+        width: 80vw;
+        height: auto;
+        margin-right: 15px;
+    }
+}

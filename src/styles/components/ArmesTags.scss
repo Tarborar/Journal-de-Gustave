@@ -89,3 +89,12 @@
         gap: 16px;
     }
 }
+
+@media screen and (max-width: 767px){
+    .armesTags{
+        display: none;
+    }
+    .tag__text{
+        font-size: 21px;
+    }
+}

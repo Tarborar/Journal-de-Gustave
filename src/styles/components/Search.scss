@@ -68,10 +68,24 @@ input:focus{
 
     .search__icon{
         left: 7%;
+        top: 45%;
     }
 
     .search__input{
         padding-left: 12%;
         padding-right: 4%;
+        top: 45%;
+    }
+}
+
+@media screen and (max-width: 676px){
+    .search__icon{
+        left: 14%;
+    }
+
+    .search__input{
+        padding-left: 22%;
+        padding-right: 8%;
+        font-size: 21px;
     }
 }

@@ -44,3 +44,21 @@
         transform: translateY(24px);
     }
 }
+
+@media screen and (max-width: 767px){
+    .armes__select{
+        align-items: center;
+    }
+
+    .armes__paragraph{
+        font-size: 28px;
+    }
+
+    .armes__data{
+        transform: translate(-12px, 24px);
+    }
+
+    .armes__dataAbsolute{
+        width: 100%;
+    }
+}
