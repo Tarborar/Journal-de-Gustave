@@ -44,7 +44,7 @@
     transition: transform 0.2s ease;
     &:hover{
         transform: scale(1.05);
-        .pictos__buttonText{
+        .gestrals__buttonTextNom, .gestrals__buttonTextNumero{
             color: $main-color;
         }
     }

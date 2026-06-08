@@ -29,6 +29,11 @@
 .gestralsDatas__image{
     width: 50%;
     height: auto;
+
+    cursor: pointer;
+    &:hover{
+        outline: 2px solid #9D9C87;
+    }
 }
 
 .gestralImage{

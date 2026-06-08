@@ -35,6 +35,16 @@
     height: 90px;
 }
 
+.journal__select{
+    cursor: pointer;
+
+    &:hover{
+        .journaux__carre{
+            opacity: 0.5;
+        }
+    }
+}
+
 .journaux__carre{
     position: absolute;
     top: 50%;
@@ -42,6 +52,12 @@
     transform: translate(-50%, -50%);
     opacity: 0.1;
     font-size: 48px;
+
+    transition: opacity 0.1s ease;
+
+    &.active{
+        opacity: 1;
+    }
 }
 
 .journaux__carreName{
@@ -157,5 +173,38 @@
 
     .journal__content, .journal__obtention{
         flex: 0;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .journal__paragraph{
+        font-size: 21px;
+    }
+
+    .backgroundJournal{
+        width: 370px;
+        transform: scaleX(-1) translateX(-5px);
+    }
+
+    .journalButton{
+        width: 55px;
+        height: 55px;
+    }
+
+    .journaux__carre{
+        font-size: 28px;
+    }
+
+    .journaux__carreName{
+        font-size: 16px;
+    }
+
+    .journaux__select{
+        gap: 8px;
+        margin-top: 0px;
+    }
+
+    .journal__localisation, .journal__contenu{
+        font-size: 18px;
     }
 }

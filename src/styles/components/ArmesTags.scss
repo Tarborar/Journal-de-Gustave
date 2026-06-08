@@ -5,6 +5,12 @@
     align-items: center;
     width: 100%;
     gap: 16px;
+
+    cursor: pointer;
+    transition: all 0.1s ease;
+    &:hover{
+        color: $main-color;
+    }
 }
 
 .tag__arrow{

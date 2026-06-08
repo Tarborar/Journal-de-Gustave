@@ -80,9 +80,9 @@ function Journaux(){
                         <img src={backgroundJournal} className='backgroundJournal' alt="" />
                         <div className='journaux__select absolute'>
                             {journauxList.map((j) => (
-                                <div className='relative' onClick={() => selectJournal(j)}>
+                                <div className='relative journal__select' onClick={() => selectJournal(j)}>
                                     <img src={journalButton} className='journalButton' alt="" />
-                                    <div className={`journaux__carre bebasNueue mainColor ${j.nom ? 'journaux__carreName' : ''}`}>{j.numero}</div>
+                                    <div className={`journaux__carre bebasNueue mainColor ${j.nom ? 'journaux__carreName' : ''} ${journalSelected?.numero === j.numero ? 'active' : ''}`}>{j.numero}</div>
                                 </div>
                             ))}
                         </div>
